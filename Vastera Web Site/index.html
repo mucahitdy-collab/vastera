@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VASTERA — Explore Earth's Lost Worlds</title>
+  
+  <!-- SEO & Meta Tags -->
+  <meta name="description" content="VASTERA is a premium cinematic documentary series exploring Earth's deep history, prehistoric ecosystems, and lost geological worlds.">
+  <meta name="keywords" content="VASTERA, Documentary, Science, Deep Time, Geology, Prehistoric Earth, YouTube Documentary">
+  <meta name="author" content="VASTERA Studio">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://vastera.pages.dev/">
+  <meta property="og:title" content="VASTERA — Explore Earth's Lost Worlds">
+  <meta property="og:description" content="Cinematic documentary series taking you back through 4.54 billion years of planetary evolution.">
+  <meta property="og:image" content="https://img.youtube.com/vi/aixMLlg0lnw/maxresdefault.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://vastera.pages.dev/">
+  <meta property="twitter:title" content="VASTERA — Explore Earth's Lost Worlds">
+  <meta property="twitter:description" content="Cinematic documentary series exploring Earth's lost worlds.">
+  <meta property="twitter:image" content="https://img.youtube.com/vi/aixMLlg0lnw/maxresdefault.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TVSeries",
+    "name": "VASTERA",
+    "description": "Cinematic documentary series exploring Earth's lost worlds and 4.54 billion years of deep history.",
+    "genre": ["Documentary", "Science", "Nature", "History"],
+    "author": {
+      "@type": "Organization",
+      "name": "VASTERA Studio"
+    },
+    "sameAs": [
+      "https://www.youtube.com/@Vasterav"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Background Canvas -->
+  <canvas id="space-canvas"></canvas>
+  <div class="mouse-glow" id="mouse-glow"></div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header" id="header">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo">VASTERA</a>
+      <nav class="nav-links" id="nav-links">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#timeline" class="nav-link">Timeline</a>
+        <a href="#episodes" class="nav-link">Episodes</a>
+        <a href="#gallery" class="nav-link">Gallery</a>
+      </nav>
+      <a href="https://www.youtube.com/@Vasterav" target="_blank" rel="noopener" class="btn btn-primary nav-cta">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        Subscribe
+      </a>
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. HERO SECTION -->
+    <section id="hero" class="hero-section">
+      <div class="hero-earth-overlay"></div>
+      <div class="hero-content">
+        <span class="hero-tag animate-fade-in">A YouTube Original Series</span>
+        <h1 class="hero-title">VASTERA</h1>
+        <p class="hero-subtitle">Explore Earth's Lost Worlds</p>
+        <div class="hero-actions">
+          <a href="https://www.youtube.com/@Vasterav" target="_blank" rel="noopener" class="btn btn-gold">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            Watch on YouTube
+          </a>
+          <a href="#timeline" class="btn btn-secondary">Explore Timeline</a>
+        </div>
+      </div>
+      <a href="#about" class="scroll-indicator" aria-label="Scroll Down">
+        <span class="mouse-icon"><span class="wheel"></span></span>
+      </a>
+    </section>
+
+    <!-- 2. ABOUT SECTION -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-lead reveal">
+            <span class="section-label">THE VISION</span>
+            <h2>Reconstructing Deep Time with Cinematic Precision.</h2>
+          </div>
+          <div class="about-text reveal">
+            <p><strong>VASTERA</strong> is an independent documentary project dedicated to uncovering the forgotten eons of our planet. From molten surfaces under relentless bombardment to ice-locked oceans and vast prehistoric supercontinents, we bridge cutting-edge scientific research with high-end visual storytelling.</p>
+            <p>Designed for thinkers, explorers, and lovers of natural history, every episode offers an immersive journey into the forces that sculpted our existence.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. GEOLOGICAL TIMELINE -->
+    <section id="timeline" class="section timeline-section">
+      <div class="container">
+        <div class="section-header center reveal">
+          <span class="section-label">CHRONOLOGY</span>
+          <h2>4.54 Billion Years of Planetary History</h2>
+          <p class="section-desc">Journey through Earth's geological eons and eras.</p>
+        </div>
+
+        <div class="timeline-container">
+          <div class="timeline-line"></div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-age">4.54 Billion Years Ago</span>
+              <h3>Hadean Eon</h3>
+              <p>The violent birth of Earth. A realm of molten rock, asteroid impacts, and the colossal collision that formed our Moon.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-age">4.00 Billion Years Ago</span>
+              <h3>Archean Eon</h3>
+              <p>Cooling crust and liquid oceans appear. The first microscopic life emerges around deep-sea hydrothermal vents.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-age">2.50 Billion Years Ago</span>
+              <h3>Proterozoic Eon</h3>
+              <p>The Great Oxidation Event transforms the atmosphere, triggering global "Snowball Earth" glaciations and complex cells.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-age">538 Million Years Ago</span>
+              <h3>Cambrian Explosion</h3>
+              <p>An unprecedented evolutionary burst creating hard shells, compound eyes, and predators like Anomalocaris.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-age">298 Million Years Ago</span>
+              <h3>Permian Period</h3>
+              <p>Supercontinent Pangaea forms. Ends in the "Great Dying"—the most severe extinction event in Earth's history (96% species lost).</p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-age">201 Million Years Ago</span>
+              <h3>Jurassic Period</h3>
+              <p>Lush, warm greenhouse climate dominated by giant sauropods, stegosaurs, and marine reptiles in shallow seas.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-age">145 Million Years Ago</span>
+              <h3>Cretaceous Period</h3>
+              <p>First flowering plants emerge alongside T-Rex and Triceratops, ending with the Chicxulub asteroid impact 66 Mya.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-age">66 Million Years Ago</span>
+              <h3>Cenozoic Era</h3>
+              <p>The Age of Mammals. Continents drift to modern positions, ice ages reshape landscapes, and humanity rises.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. FEATURED EPISODE (ÖNE ÇIKAN S1 B1 VİDEOSU) -->
+    <section class="section featured-section">
+      <div class="container">
+        <span class="section-label">FEATURED RELEASE</span>
+        <div class="featured-card reveal">
+          <div class="featured-image-wrapper">
+            <img src="https://img.youtube.com/vi/aixMLlg0lnw/maxresdefault.jpg" alt="The Birth of Our Planet" loading="lazy">
+            <div class="badge-featured">PREMIERE</div>
+          </div>
+          <div class="featured-details">
+            <span class="meta-tag">SEASON 1 • EPISODE 01 • 29 MIN</span>
+            <h2>The Birth of Our Planet | Lost Worlds</h2>
+            <p>From a chaotic protostellar disk and oceans of molten magma to the catastrophic Moon-forming impact with Theia. Journey back 4.5 billion years to witness how Earth transformed from a hellish inferno into a living world.</p>
+            <div class="featured-actions">
+              <a href="https://www.youtube.com/watch?v=aixMLlg0lnw" target="_blank" rel="noopener" class="btn btn-gold">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                Watch Full Episode
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. EPISODE LIBRARY (S1 B2, S1 B3, S1 B4 VİDEOLARI) -->
+    <section id="episodes" class="section episodes-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">LIBRARY</span>
+          <h2>Documentary Episodes</h2>
+        </div>
+
+        <div class="episodes-grid">
+          <!-- Video 2 -->
+          <div class="episode-card reveal">
+            <div class="card-thumb">
+              <img src="https://img.youtube.com/vi/7ix2hx4v_Jg/maxresdefault.jpg" alt="The First Cell Was Born 4 Billion Years Ago" loading="lazy">
+              <span class="card-duration">29:46</span>
+            </div>
+            <div class="card-content">
+              <span class="card-season">SEASON 1 • EPISODE 02</span>
+              <h3>The First Cell Was Born 4 Billion Years Ago</h3>
+              <p>Explore deep-sea hydrothermal vents, primordial chemical soups, and the emergence of LUCA—the last universal common ancestor of all life on Earth.</p>
+              <a href="https://www.youtube.com/watch?v=7ix2hx4v_Jg" target="_blank" rel="noopener" class="btn-text">Watch Episode →</a>
+            </div>
+          </div>
+
+          <!-- Video 3 -->
+          <div class="episode-card reveal">
+            <div class="card-thumb">
+              <img src="https://img.youtube.com/vi/LI6_qlkWbVE/maxresdefault.jpg" alt="Snowball Earth: The Ice Age That Changed Life Forever" loading="lazy">
+              <span class="card-duration">30:09</span>
+            </div>
+            <div class="card-content">
+              <span class="card-season">SEASON 1 • EPISODE 03</span>
+              <h3>Snowball Earth: The Ice Age That Changed Life Forever</h3>
+              <p>How global glaciations turned the planet into an unbroken ball of ice for 57 million years—and the catastrophic volcanic thaw that triggered complex life.</p>
+              <a href="https://www.youtube.com/watch?v=LI6_qlkWbVE" target="_blank" rel="noopener" class="btn-text">Watch Episode →</a>
+            </div>
+          </div>
+
+          <!-- Video 4 -->
+          <div class="episode-card reveal">
+            <div class="card-thumb">
+              <img src="https://img.youtube.com/vi/u3JvberYisI/maxresdefault.jpg" alt="Ediacara: Strange Creatures and a Lost World" loading="lazy">
+              <span class="card-duration">30:01</span>
+            </div>
+            <div class="card-content">
+              <span class="card-season">SEASON 1 • EPISODE 04</span>
+              <h3>Ediacara: Strange Creatures and a Lost World</h3>
+              <p>Uncover the weirdest biological experiment in planetary history: soft-bodied, frond-like organisms carpeting the prehistoric seafloor before the Cambrian Explosion.</p>
+              <a href="https://www.youtube.com/watch?v=u3JvberYisI" target="_blank" rel="noopener" class="btn-text">Watch Episode →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. GALLERY SECTION -->
+    <section id="gallery" class="section gallery-section">
+      <div class="container">
+        <div class="section-header center reveal">
+          <span class="section-label">VISUAL ARCHIVE</span>
+          <h2>Cinematic Visualizations</h2>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-item reveal">
+            <img src="https://img.youtube.com/vi/aixMLlg0lnw/maxresdefault.jpg" alt="Magma Ocean Concept" loading="lazy">
+            <div class="gallery-caption">The Hadean Magma Ocean & Collision</div>
+          </div>
+          <div class="gallery-item reveal">
+            <img src="https://img.youtube.com/vi/LI6_qlkWbVE/maxresdefault.jpg" alt="Snowball Earth Render" loading="lazy">
+            <div class="gallery-caption">Cryogenian Global Glaciation</div>
+          </div>
+          <div class="gallery-item reveal">
+            <img src="https://img.youtube.com/vi/7ix2hx4v_Jg/maxresdefault.jpg" alt="Hydrothermal Vents" loading="lazy">
+            <div class="gallery-caption">Hydrothermal Chimneys & Origin of Life</div>
+          </div>
+          <div class="gallery-item reveal">
+            <img src="https://img.youtube.com/vi/u3JvberYisI/maxresdefault.jpg" alt="Ediacaran Seafloor" loading="lazy">
+            <div class="gallery-caption">Ediacaran Biota Ecosystem</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. YOUTUBE CTA -->
+    <section class="section cta-section">
+      <div class="container">
+        <div class="cta-card reveal">
+          <span class="section-label">JOIN THE JOURNEY</span>
+          <h2>Subscribe to VASTERA on YouTube</h2>
+          <p>New high-definition documentary episodes published regularly. Unravel the mysteries of deep geological time.</p>
+          <a href="https://www.youtube.com/@Vasterav" target="_blank" rel="noopener" class="btn btn-gold btn-large">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            Subscribe Channel
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 8. FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <a href="#hero" class="brand-logo">VASTERA</a>
+        <p>Explore Earth's Lost Worlds. A cinematic documentary studio for deep time natural history.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#timeline">Timeline</a></li>
+          <li><a href="#episodes">Episodes</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <h4>Connect</h4>
+        <div class="social-icons">
+          <a href="https://www.youtube.com/@Vasterav" target="_blank" rel="noopener" aria-label="YouTube">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <p>&copy; 2026 VASTERA Studio. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>
